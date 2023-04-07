@@ -1,4 +1,4 @@
-import { useState } from 'react'
+//import { useState } from 'react'
 import style from 'styled-components'
 
 
@@ -34,24 +34,24 @@ const Button = style.button`
 const Task = ({DeleteItem,Text,Id,MoveUp,MoveDown})=>{
     
     
-    const [info,Setinfo] = useState(Text);
+    //const [info,Setinfo] = useState(Text);
     
     
-    const handleChange = (e) =>{
-    e.stopPropagation()
-    e.preventDefault()
+//     const handleChange = (e) =>{
+//     e.stopPropagation()
+//     e.preventDefault()
        
-    Setinfo(e.target.value)
-}
+//     Setinfo(e.target.value)
+// }
 
   const handleUndo = ()=>{
     // console.log(info)
-    Setinfo(Text);
+    //Setinfo(Text);
   }
   
   return (
       <Container>
-            <InnerBox><input id={Id} onChange={handleChange}  type='text' value={info}></input></InnerBox>
+            <InnerBox><input id={Id}  type='text' value={Text}></input></InnerBox>
             <Button id={Id} onClick={DeleteItem}>Delete</Button>
             <Button id={Id} onClick={MoveUp}>Up</Button>
             <Button id={Id} onClick={MoveDown}>Down</Button>

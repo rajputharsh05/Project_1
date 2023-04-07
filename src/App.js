@@ -16,7 +16,7 @@ const Container = style.div`
 `
 
 const intialDB = [
-
+  
 ]
 
 const  App = () => {
@@ -93,8 +93,7 @@ const  App = () => {
     SetItems(NewItems)
   }
 
-
-   
+  
   return (
     <Container >
       <Navbar></Navbar>
